@@ -41,7 +41,10 @@ export default class ContactForm {
         if (this.req.status === 200) {
           this.setMessage(this.Es.success_messageElt, 'Merci pour votre message, je le lirais dès que possible');
         } else {
-          this.setMessage(this.Es.error_messageElt, this.req.responseText);
+          this.setMessage(
+            this.Es.error_messageElt,
+            `Le formulaire n'a pas pu être envoyé, vérifiez que tous les champs sont bien remplis`
+            );
         }
       }
     };

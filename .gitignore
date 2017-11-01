@@ -1,4 +1,3 @@
-app/config/prod.php
 vendor/
 node_modules/
 var/
