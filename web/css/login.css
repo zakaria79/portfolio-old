@@ -1,0 +1,10 @@
+header {
+    background: rgb(233, 236, 239);
+}
+#logo {
+  padding: 1rem;
+}
+#logo a {
+  color: black;
+  font-size: 1.5rem;
+}

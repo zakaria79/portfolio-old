@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nouveau fomulaire envoyé</title>
+  </head>
+  <body style="line-height:1.3">
+    <h1 style="padding:1rem;background:rgb(86, 61, 124);color:white;margin-bottom:1rem;">Nouveau formulaire envoyé dans le portfolio</h1>
+    <div>
+      <ul>
+        <li><strong>Date: </strong>{{ "now"|date("d/m/y H:i:s") }}</li>
+        <li><strong>Nom:  </strong>{{ contact.lastname }}</li>
+        <li><strong>Prénom:  </strong>{{ contact.firstname }}</li>
+        <li><strong>Tel:  </strong>{{ contact.tel }}</li>
+        <li><strong>e-mail: </strong>{{ contact.email }}</li>
+        <li><strong>Message:  </strong>{{ contact.message }}</li>
+      </ul>
+    </div>
+  </body>
+</html>

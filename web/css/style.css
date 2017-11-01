@@ -1,0 +1,414 @@
+body {
+  background: repeat center center url(../images/capture_background.png);
+  background-attachment: fixed;
+}
+
+section,
+.img,
+.realisationsButton .fa-hand-o-right,
+#my_calendar:hover {
+  transition: 0.3s;
+}
+
+#message {
+  width: 98%;
+}
+
+#success_message,
+#error_message,
+#fixed-name {
+  position: fixed;
+}
+
+#success_message,
+#error_message {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+#logo {
+  display: inline-block;
+  background: gray;
+  padding: 0.1rem 0.3rem;
+  border-radius: 50%;
+  font-weight: bold;
+  color: black;
+}
+
+#title {
+  color: rgb(216, 212, 212);
+}
+
+ul li {
+  list-style: none;
+}
+
+.separator {
+  height: 2rem;
+  background: rgb(68, 77, 80);
+  box-shadow: inset 0px 0 12px 4px black;
+  border-radius: 1rem;
+}
+
+#contact> .d-flex {
+  justify-content: space-around;
+}
+
+#contact {
+  color: rgb(228, 228, 228);
+}
+
+#contact a {
+  color: rgb(124, 182, 198);
+}
+
+#navbar {
+  box-shadow: 0 1px 4px 2px rgb(36, 37, 38);
+  border-bottom: 0.02rem solid rgb(0, 0, 0);
+}
+
+#navbar a {
+  color: rgb(206, 202, 202);
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+#contact a:hover {
+  color: white;
+}
+
+hr {
+  background: rgb(236, 237, 237);
+}
+
+#title+ p {
+  color: rgb(212, 209, 209);
+}
+
+.realisationsButton:hover .fa-hand-o-right {
+  transform: translateX(0.6rem);
+}
+
+#fixed-name {
+  top: 40%;
+  left: 1rem;
+  transform: rotate(90deg);
+  transform-origin: left;
+  background: rgb(255, 255, 255);
+  color: rgb(8, 8, 8);
+  z-index: 10000;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  opacity: 0.3;
+}
+
+footer {
+  color: rgb(197, 193, 193);
+}
+
+.hide_page {
+  opacity: 0;
+}
+
+
+/*
+ * images
+ **/
+
+img {
+  width: 100%;
+  border-radius: 0.2rem;
+}
+
+.imgs.d-flex {
+  justify-content: space-between;
+}
+
+.img {
+  margin-top: 1rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid rgb(215, 208, 208);
+}
+
+.img:hover,
+#my_calendar:hover {
+  box-shadow: 0px 3px 13px 1px rgb(98, 95, 95);
+  transform: translateY(-0.3rem);
+}
+
+#realisations #imgs {
+  flex-wrap: wrap;
+}
+
+#realisations .img {
+  width: 30%;
+}
+
+#realisations .imgs {
+  flex-wrap: wrap;
+}
+
+#contact,
+#realisations #img {
+  justify-content: space-around;
+}
+
+label span {
+  color: red;
+  color: rgb(239, 70, 70);
+}
+
+
+/**
+ * Calendrier
+ */
+
+#next_button {
+  margin-left: 1rem;
+}
+
+#my_calendar .dropdown-toggle,
+#current_date,
+#previous_button,
+#next_button,
+td {
+  cursor: pointer;
+}
+
+#calendar_nav {
+  color: grey;
+}
+
+#calendar_nav {
+  justify-content: space-between;
+}
+
+.display-none {
+  display: none;
+}
+
+nav .fa-chevron-right {
+  margin-left: 2rem;
+}
+
+#calendar i:hover {
+  color: white;
+}
+
+#title_btn_calendar {
+  margin-top: 2rem;
+}
+
+#current_date {
+  color: gray;
+  padding: 0.1rem 0.2rem;
+}
+
+#current_date:hover {
+  color: white;
+}
+
+#month table {
+  height: 90vh;
+}
+
+table {
+  width: 100%;
+  border-right: 0.1rem solid rgb(220, 215, 215);
+  border-bottom: 0.1rem solid rgb(220, 215, 215);
+  margin-bottom: 2rem;
+  background: white;
+}
+
+#current_date.active {
+  border: 0.1rem solid grey;
+  color: white;
+}
+
+#week {
+  overflow: scroll;
+}
+
+th {
+  text-align: center;
+  height: 2rem;
+  font-weight: initial;
+}
+
+#month td {
+  position: relative;
+  padding: 0 0 1rem 1rem;
+  box-sizing: border-box;
+  vertical-align: bottom;
+}
+
+.today {
+  background: rgb(19, 135, 149);
+}
+
+.prevNext {
+  color: rgb(204, 200, 200);
+}
+
+.calendar .hours {
+  width: 1rem;
+  text-align: center;
+}
+
+td {
+  border-left: 0.1rem solid rgb(220, 215, 215);
+  border-top: 0.1rem solid rgb(158, 151, 151);
+}
+
+.flex {
+  display: flex;
+}
+
+.date_to_string {
+  color: gray;
+}
+
+.hide {
+  opacity: 0;
+}
+
+#month .event {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  color: blue;
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#month .event {
+  height: 1.6rem;
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.eventMonth {
+  position: absolute;
+  top: 0;
+  right: -0.1rem;
+  left: -0.1rem;
+  font-size: 0.6rem;
+}
+
+.blue {
+  background: rgba(49, 151, 159, 0.39);
+}
+
+.red {
+  background: rgba(230, 24, 46, 0.62);
+}
+
+.green {
+  background: rgba(65, 209, 122, 0.64);
+}
+
+.grey {
+  background: rgb(225, 225, 225);
+}
+
+.yellow {
+  background: orange;
+}
+
+.maroon {
+  background: maroon;
+}
+
+.blue,
+.green,
+.grey,
+.red,
+.yellow,
+.maroon {
+  color: white;
+}
+
+#week td,
+#days td,
+#day td {
+  position: relative;
+}
+
+.eventWeek .event,
+#days .event,
+#day .event {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+}
+
+.event2 {
+  left: 20%;
+}
+
+.event3 {
+  left: 40%;
+}
+
+.event4 {
+  left: 60%;
+}
+
+.event5 {
+  left: 80%;
+}
+
+.event_title {
+  position: absolute;
+  z-index: 100;
+}
+
+#day .event_title {
+  right: 1rem;
+}
+
+.count_events {
+  position: absolute;
+  font-size: 0.8rem;
+}
+
+#day .count_events {
+  right: 1rem;
+}
+
+#list {
+  padding: 2rem 0;
+}
+
+.countEvent {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+  font-size: 0.7rem;
+}
+
+#eventDetails> div {
+  margin: 1rem 0;
+}
+
+#my_calendar .dropdown-toggle {
+  color: white;
+}
+
+#my_calendar .nav {
+  justify-content: space-between;
+  align-items: center;
+}

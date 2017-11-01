@@ -1,0 +1,95 @@
+/*
+ * Responsive
+ *
+ * */
+
+@media screen and (max-width: 80rem) {     /* 1278px */
+    h1 {
+        font-size: 2.5rem !important;
+    }
+}
+@media screen and (max-width: 74rem) {  /* 1183px */
+   .d-flex .img, #realisations .desk .img {
+        width: 45%;
+   } 
+}
+@media screen and (max-width: 49rem) {    /* 783px */
+    .container {
+        min-width: 100% !important;
+    }
+    body {
+        background: rgb(233, 236, 239);
+    }
+    #fixed-name {
+        display: none;
+    }
+    #title, #title + p {
+        color: black;
+    }
+    #realisations .d-flex .img {
+        width: 45%;
+    }
+    #contact {
+        color: black;
+    }
+    #contact > .d-flex {
+        flex-direction: column;
+    }
+    #form-contact .d-flex > div {
+        width: 100%;
+    }
+    #bloc-contact {
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width: 37rem) {  /* 589px */
+    #realisations .desk .img {
+        width: 100%;
+    }
+    #contact h3 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 26rem) { /* 410px */
+   #home .d-flex .img, #realisations .d-flex .img, .realisationsButton {
+        width: 100%;
+   } 
+    #realisations .img {
+        width: 45%;
+    }
+    .display-3 {
+        font-size: 2rem;
+    }
+    #title {
+        font-size: 2rem !important;
+    }
+    #home #imgs {
+        flex-direction: column;
+    }
+    #realisations .img {
+        width: 100%;
+    }
+    #imgs.d-flex {
+        flex-direction: column;
+    }
+    #contact .d-flex {
+        flex-direction: column;
+    }
+    #form-contact .mr-3 {
+        margin-right: 0 !important;
+    }
+    .btn {
+        width: 100%;
+    }
+    #contact h2 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    #contact {
+        color: rgb(51, 52, 53);
+    }
+}
+

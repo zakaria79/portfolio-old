@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Développeur - web - Portfolio</title>
+    <link rel="stylesheet" href="{{ asset('lib/bootstrap-4.0.0-beta-dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" >
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}" type="text/css" >
+    <link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+    <body>
+      <header>
+        <nav id="navbar" class="navbar navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand homeButton" data-route="home" href="#"><span class="d-none d-md-inline">| Développeur-</span><span id="logo">OZ</span></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item homeButton" data-route="home">
+                <a class="nav-link" href="#">Accueil</a>
+              </li>
+              <li class="nav-item realisationsButton" data-route="realisations">
+                <a class="nav-link" href="#">Réalisations<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item aproposButton" data-route="apropos">
+                <a class="nav-link" href="#">À propos</a>
+              </li>
+              <li class="nav-item contactButton" data-route="contact">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div id="fixed-name"> Zakaria Othmane </div>
+      <h1 id="title" class="mt-2 pr-1 text-right">ZAKARIA OTHMANE</h1>
+      <p class="subtitle mr-1 text-right">Développeur d'Applications Web</p>
+      <div>
+        <section id="home" class="container jumbotron mt-5" hidden>
+          <h1 id="my-title" class="display-3 text-capitalize">LA TECHNOLOGIE À VOTRE SERVICE</h1>
+          <hr class="my-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">
+            " Vous n'imaginez pas ce que la technologie peut faire pour vous "
+            </p>
+            <footer class="blockquote-footer"> 
+              Le manque d'idées est la seule chose qui vous empêche de profiter de la 
+              puissance de la Technologie… 
+            </footer>
+          </blockquote>
+          <hr class="my-4">
+          <blockquote class="blockquote">
+            <p class="mb-0">
+            " Je suis développeur web, et je mets  à votre disposition mon<em> "savoir"</em>, 
+            pour mettre la technologie à votre <em>"service"</em> "
+            </p>
+            <footer class="blockquote-footer"> 
+              À vous d'apporter vos idées…
+            </footer>
+          </blockquote>
+          <hr class="my-4">
+          <h2 class="mt-5">Mes Compétences</h2>
+          <p class="lea">
+          Les technologies avec lesquelles j'ai travaillé:
+          </p>
+          <div class="ml-5">
+            <h4 class="display-5 mt-5">
+              Languages
+            </h4>
+            <ul>
+              <li>JavaScript ES5 <small>(POO)</small></li>
+              <li>JavaScript ES6 <small>(POO)</small></li>
+              <li>PHP7 <small>(POO)</small></li>
+              <li>SQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>TypeScript</li>
+              <li>Bash</li>
+            </ul>
+            <h4 class="mt-5">Bibliothèques, Frameworks, outils…</h4>
+            <ul>
+              <li>Symfony 3</li>
+              <li>Silex</li>
+              <li>Doctrine</li>
+              <li>Angular 4</li>
+              <li>jQuery</li>
+              <li>Twig</li>
+              <li>Bootstrap 4</li>
+              <li>Composer</li>
+              <li>Webpack</li>
+              <li>Babel</li>
+              <li>Nodejs</li>
+              <li>React</li>
+              <li>npm</li>
+            </ul>
+            <h4 class="mt-5">Environnement</h4>
+            <ul>
+              <li>Linux, Ubuntu, Debian</li>
+              <li>Apache</li>
+              <li>MySQL</li>
+              <li>MariaDB</li>
+            </ul>
+            <h4 class="mt-5">Éditeur de texte</h4>
+            <ul>
+              <li>Vim (éditeur principal)
+                <ul>
+                  <li>Neovim, JSHint, eslint, syntastic…</li>
+                </ul>
+              </li>
+              <li>SublimText</li>
+            </ul>
+          </div>
+          <hr class="my-5">
+          <h2 class="mt-5">Je m'intérresse à…</h2>
+          <p>
+          En ce moment je m'intéresse beaucoup au technologies JavaScript tels que Node, Angular, React, Vue.js…
+          </p>
+          <hr class="my-5">
+          <h2 class="display-5 my-5">Aperçu d'un projet en cours de réalisation</h2>
+          <p>
+          Je suis entrain de créer un site pour un courtier en assurance et 
+          j'ai eu besoin de créer un calendrier agenda pour les prises de rendez-vous et la gestion d'évements
+          </p>
+          <p>Le calendrier est entièrement codé en JavaScript natif</p>
+          <div class="img">
+            <a href="https://lesitedelassurance.fr" target="_blank">
+              <img src="images/gif/video_1.gif" alt="Capture d'écran d'un projet" class="img-thumbnail">
+            </a>
+          </div>
+          <h2 class="h3 py-3 my-3">Et sur Mobile, ça donne ça…</h2>
+          <div id="imgs" class="d-flex imgs">
+            <div class="img">
+              <a href="https://lesitedelassurance.fr" target="_blank">
+                <img src="images/gif/mobile_gif/mobil_14.gif" alt="Capture d'écran d'un projet" class="img-thumbnail">
+              </a>
+            </div>
+            <div class="img">
+              <a href="https://lesitedelassurance.fr" target="_blank">
+                <img src="images/gif/mobile_gif/mobil_1.gif" alt="Capture d'écran d'un projet" class="img-thumbnail">
+              </a>
+            </div>
+          </div>
+          <hr class="my-5">
+          <p class="lead text-right">
+          <a class="btn btn-primary btn-lg realisationsButton" data-route="realisations" href="#" role="button">
+            Plus de détails
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          </a>
+          </p>
+        </section>
+        <section id="realisations" class="container jumbotron mt-5" hidden>
+          <h1 class="display-3">Mes Projets</h1>
+          <p class="lead"> 
+          Je suis entrain de créer un site pour un courtier en assurance, avec un espace "administrateur", 
+          un calendrier agenda, prise de rdvs en ligne….  
+          </p>
+          <hr class="my-5">
+          <h2>Les Fonctionnalités</h2>
+          <p> Les partenaires peuvent prendre des RDVs pour des clients sur le site et suivre l'évolution des rdvs dans leur espace personnel.</p>
+          <p> Les clients peuvent obtenir des devis en remplissant un formulaire.  </p>
+          <p> L'administrateur reçoit un mail et peut recontacter les clients.  </p>
+          <p>
+          L'administrateur crée et gère les comptes de ses partenaires, commerciaux et clients.
+          Il gère aussi l'évolution des rdvs avec les clients et définit les plages disponibles du calendrier.
+          </p>
+          <p>
+          Les événements peuvent être créés et affichés dans un calendrier multi-vues :
+          «mois», «semaine», «4 jours», «1 jours».
+          </p>
+          <p> Les événements peuvent être récurrent : «tous les ans», «tous les mois», «toutes les semaines», «tous les jours».  </p>
+          <hr class="my-5">
+          <h2>Technologies utilisées</h2>
+          <div class="ml-5">
+            <h4>Back-end</h4>
+            <ul> <li>Silex</li> <li>PHP 7</li> <li>SQL</li> </ul>
+            <h4>Front-end</h4>
+            <ul> <li>JavaScript <small>ES6</small></li> <li>Babel</li> <li>Webpack</li> <li>Twig</li> <li>HTML5</li> <li>CSS3</li> </ul>
+          </div>
+          <hr class="my-5">
+          <h2 class="mb-3">Aperçu</h2>
+          <div id="my_calendar">
+
+            <div id="calendar">
+
+              <div class="nav bg-dark flex">
+                <li class="nav-item dropdown active">
+                  <div id="calendar_button" class="nav-link dropdown-toggle page_button active" data-page="Calendar" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Calendrier
+                  </div>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item change_calendar_button" href="#" data-calendar="monthCalendar">Mois</a>
+                    <a class="dropdown-item change_calendar_button" href="#" data-calendar="weekCalendar">Semaine</a>
+                    <a class="dropdown-item change_calendar_button" href="#" data-calendar="daysCalendar">4 Jours</a>
+                    <a class="dropdown-item change_calendar_button" href="#" data-calendar="dayCalendar">1 Jour</a>
+                  </div>
+                </li>
+                <em><div class="bg-dark date_to_string"></div></em>
+                <div id="calendar_nav" class="flex bg-dark p-3">
+                  <div id="current_date"> </div>
+                  <div class="ml-3">
+                    <span id="previous_button" data-action="goToPrevious"> <i class="fa fa-chevron-left" aria-hidden="true"></i> </span>
+                    <span id="next_button" data-action="goToNext"> <i class="fa fa-chevron-right" aria-hidden="true"></i> </span>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar" id="month">
+                <table>
+                  <tr>
+                    <th class="th th-month">L<span class="d-none d-sm-inline">un</span></th>
+                    <th class="th th-month">M<span class="d-none d-sm-inline">ar</span></th>
+                    <th class="th th-month">M<span class="d-none d-sm-inline">er</span></th>
+                    <th class="th th-month">J<span class="d-none d-sm-inline">eu</span></th>
+                    <th class="th th-month">V<span class="d-none d-sm-inline">en</span></th>
+                    <th class="th th-month">S<span class="d-none d-sm-inline">am</span></th>
+                    <th class="th th-month">D<span class="d-none d-sm-inline">im</span></th>
+                  </tr>
+                  {% for i in 0..5 %}
+                  <tr data-trnbs="{{ i }}">
+                    {% for j in 1..7 %}
+                    <td data-weekDay="{{ j }}" data-calendar="month" data-tdnbs="{{ j-1 + (i*7) }}">
+                      <div class="tdMonth"></div>
+                      <div class="eventMonth divEvents"></div>
+                      <div class="countEvent" hidden> </div>
+                    </td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </table>
+              </div>
+              <div class="calendar" hidden id="week">
+                <table>
+                  <tr>
+                    <th class="white"></th>
+                    <th class="th th-month">L<span class="d-none d-sm-inline">un <span class="date">  </span></span></th>
+                    <th class="th th-month">M<span class="d-none d-sm-inline">ar <span class="date">  </span></span></th>
+                    <th class="th th-month">M<span class="d-none d-sm-inline">er <span class="date">  </span></span></th>
+                    <th class="th th-month">J<span class="d-none d-sm-inline">eu <span class="date">  </span></span></th>
+                    <th class="th th-month">V<span class="d-none d-sm-inline">en <span class="date">  </span></span></th>
+                    <th class="th th-month">S<span class="d-none d-sm-inline">am <span class="date">  </span></span></th>
+                    <th class="th th-month">D<span class="d-none d-sm-inline">im <span class="date">  </span></span></th>
+                  </tr>
+                  {% for i in 0..23 %}
+                  <tr>
+                    <td class="hours" >{{ i }}</td>
+                    {% for j in 1..7 %}
+                    <td class="tdWeek" data-column="{{ j }}" data-hour="{{ i }}" data-calendar="week">
+                      <div class="event_title"> </div>
+                      <div class="eventWeek divEvents"></div>
+                    </td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </table>
+              </div>
+              <div class="calendar" hidden id="days">
+                <table>
+                  <tr>
+                    <th class="white"></th>
+                    {% for i in 1..4 %}
+                    <th class="th th-days">test</th>
+                    {% endfor %}
+                  </tr>
+                  {% for i in 0..23 %}
+                  <tr>
+                    <td class="hours">{{ i }}h</td>
+                    {% for j in 1..4 %}
+                    <td class="tdDays" data-hour="{{ i }}" data-calendar="days" data-column="{{ j }}">
+                      <div class="event_title"> </div>
+                      <div class="eventDays divEvents"></div>
+                    </td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </table>
+              </div>
+              <div class="calendar" hidden id="day">
+                <table>
+                  <tr>
+                    <th class="white"></th>
+                    <th class="th th-day currentDate"></th>
+                  </tr>
+                  {% for i in 0..23 %}
+                  <tr>
+                    <td class="hours">{{ i }}h</td>
+                    <td class="tdDay" data-hour="{{ i }}" data-calendar="day">
+                      <div class="event_title"> </div>
+                      <div class="eventDay divEvents"></div>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="imgs desk d-flex">
+            {% for i in 1..9 %}
+            <div class="img my-3">
+              <a href="https://lesitedelassurance.fr" target="_blank"> 
+                <img src="images/gif/video_{{i}}.gif" alt="Aperçu du projet"> 
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+          <hr class="my-5">
+          <h3 class="mb-3">Responsive design</h3>
+          <div class="imgs mobile d-flex">
+            {% for i in 1..6 %}
+            <div class="img my-3">
+              <a href="https://lesitedelassurance.fr" target="_blank"> 
+                <img src="images/gif/mobile_gif/mobil_{{i}}.gif" alt="Aperçu du projet"> 
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        <section id="apropos" class="apropos container jumbotron" hidden>
+          <h1 class="display-3">Mon Parcour</h1>
+          <p class="lead"> Passionné par le web et ses technologies, j'ai d'abord appris à développer seul en autodidacte.  </p>
+          <blockquote class="blockquote"> <footer class="blockquote-footer">Heureusement les ressources ne manquent pas</footer> </blockquote>
+          <hr class="my-4">
+          <h2>Des sites qui m'ont été très utiles</h2>
+          <hr class="my-4">
+          <p>J'ai beaucoup apris grâce à des sites comme </p>
+          <ul>
+            <li><a href="https://openclassrooms.com" target="_blank">OpenClassRooms</a></li>
+            <li><a href="https://www.developpez.com/" target="_blank">developpez.com</a></li>
+            <li><a href="https://developer.mozilla.org/fr/" target="_blank">developer.mozilla</a></li>
+            <li><a href="https://www.grafikart.fr/" target="_blank">grafikart</a></li>
+            <li><a href="https://www.alsacreations.com/" target="_blank">alsacreations</a></li>
+            <li><a href="http://devdocs.io/" target="_blank">devdocs</a></li>
+            <li><a href="http://www.php.net/" target="_blank">php.net</a></li>
+            <li><a href="https://www.codecademy.com/fr" target="_blank">codecademy</a></li>
+          </ul>
+          <p> J'achette aussi des livres, magazines… </p>
+          <hr class="my-4">
+          <h2>Formations</h2>
+          <p>
+          Ensuite, j'ai passé l'excellente formation 
+          <a href="https://attestation.3wa.fr/othmane-zakaria" target="_blank"> « Développeur Intégrateur en applications web » </a>
+          à la <a href="https://3wa.fr/" target="_blank">3W Academy</a>, une formation basée sur la pratique. 
+          </p>
+          <p>
+          Cette formation m'a beaucoup aidé,
+          elle m'a surtout appris à mieux comprendre les documentations techniques des différentes
+          technologies, ce qui est indispensable si on veut rester à jour dans ce metier,
+          surtout que les documentations mettent souvent du temps à être traduites en français.
+          </p>
+          <p>
+          Depuis, je m'informe régulièrement sur les nouvelles technologies, et j'apprends toujours de nouvelles choses, tout en travaillant sur mes projets.
+          </p>
+          <hr class="my-4">
+          <h2>J'aimerais…</h2>
+          <p>
+          J'aimerais trouver un poste en tant que développeur dans une entreprise qui m'aiderai à évoluer et d'approffondir mes compétences.
+          </p>
+          <p>
+          Si vous êtes intéressés par mon profile, n'hésitez pas à me laisser un message avec vos coordonées dans le formulaire de contact, je vous recontacterai…
+          </p>
+          <p class="lead text-right">
+          <a class="btn btn-primary btn-lg contactButton" data-route="contact" href="#" role="button">
+            Laissez-moi un message
+            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          </a>
+          </p>
+          <hr class="my-4">
+          <h2>Mon environnement de travail</h2>
+          <div class="m">
+            <h4>Langages</h4>
+            <ul>
+              <li>PHP7</li>
+              <li>SQL</li>
+              <li>JavaScript <small>(ES6, ES5)</small></li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bash</li>
+            </ul>
+            <h4>Bibliothègues, Frameworks, outils</h4>
+            <ul>
+              <li>Symfony 3</li>
+              <li>Silex</li>
+              <li>Doctrine</li>
+              <li>Angular 4</li>
+              <li>jQuery</li>
+              <li>Twig</li>
+              <li>Bootstrap 4</li>
+              <li>React</li>
+              <li>Webpack</li>
+              <li>Babel</li>
+            </ul>
+            <h4>Environnement de travail</h4>
+            <ul>
+              <li>Linux, Ubuntu, Debian</li>
+              <li>LAMP</li>
+            </ul>
+            <h4>Éditeur de texte</h4>
+            <ul>
+              <li>Vim (éditeur principal)</li>
+              <li>SublimText</li>
+            </ul>
+          </div>
+        </section>
+        <section id="contact" class="container jmbtron mb-5" hidden>
+          <div class="d-flex mt-5">
+            <div id="form-contact">
+              <h2> Laissez-moi un message </h2>
+              <form id="contact_form" action="#" method="post">
+                <div class="d-flex mb-3">
+                  <div class="mr-3">
+                    <label for="firstname">Prénom <span> * </span></label>
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Votre prénom" require>
+                    <div class="invalid-feedback"> Entrez votre prénom </div>
+                  </div>
+                  <div>
+                    <label for="lastname">Nom <span> * </span></label>
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Votre nom" equired>
+                    <div class="invalid-feedback"> Entrez votre nom </div>
+                  </div>
+                </div>
+                <div class="d-flex mb-3">
+                  <div class="mr-3">
+                    <label for="mail">Adresse mail <span> * </span></label>
+                    <input type="email" class="form-control" id="mail" name="email" placeholder="Votre adresse mail" equired>
+                  </div>
+                  <div>
+                    <label for="tel">Téléphone</label>
+                    <input type="tel" class="form-control" id="tel" name="tel" placeholder="Votre numéro de téléphone" equired>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="message">Message <span> * </span></label>
+                  <textarea type="text" class="form-control" id="message" name="message" equired></textarea>
+                  <div class="invalid-feedback"> Le message est vide </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+              </form>
+            </div>
+            <div id="bloc-contact">
+              <h2 class="mb-5">ZAKARIA OTHMANE</h2>
+              <h3>Développeur Web en régions parisienne</h3>
+              <address>
+                <p class="lead"> <a href="mailto:othmane.zakaria79@gmail.com">othmane.zakaria79@gmail.com</a> </p>
+                <p class="lead"> <a href="tel:0651596291">06 51 59 62 91</a> </p>
+                <p class="lead">
+                <a target="_blank" href="{{ asset('https://www.linkedin.com/in/zakaria-othmanedeveloppeurweb/') }}"> <i class="fa fa-linkedin mr-2" aria-hidden="true"></i> </a>
+                <a target="_blank" href="{{ asset('https://twitter.com/ZakariaoOthmane') }}"> <i class="fa fa-twitter mr-2" aria-hidden="true"></i> </a>
+                <a target="_blank" href="{{ asset('https://www.facebook.com/zakaria.othmane.524') }}"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
+                <a target="_blank" href="{{ asset('https://github.com/zakaria79/Calendar') }}"><i class="fa fa-github ml-2" aria-hidden="true"></i> </a>
+                </p>
+              </address>
+            </div>
+          </div>
+          <div id="success_message" class="alert alert-success" role="alert" hidden> </div>
+          <div id="error_message" class="alert alert-danger" role="alert" hidden> </div>
+        </section>
+      </div>
+      <footer class="text-center"> 2017 Portfolio Zakaria Othmane Développeur Intégrateur Web </footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anos"></script>
+      <script src="{{ asset('lib/bootstrap-4.0.0-beta-dist/js/bootstrap.min.js') }}"></script>
+      <script src="{{ asset('js/dist/polyfill.min.js') }}"> </script>
+      <script src="{{ asset('js/dist/portfolio.js') }}"> </script>
+    </body>
+</html>

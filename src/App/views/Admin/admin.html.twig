@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PORTFOLIO OTHMANE ZAKARIA</title>
+    <link rel="stylesheet" href="{{ asset('css/admin/style.css') }}" type="text/css" >
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <body>
+      <h1>Adminisrtation de mon portfolio</h1>
+      {% for message in messages %}
+      <ul>
+        <li>{{ message.mail}}</li>
+        <li>{{ message.name }}</li>
+        <li>{{ message.firstname }}</li>
+        <li>{{ message.tel }}</li>
+        <li>{{ message.message }}</li>
+        <li>{{ message.date_creation }}</li>
+      </ul>
+      {% endfor%}
+      <div>
+        <a href="{{ path('logout') }}">Deconnexion</a>
+      </div>
+    </body>
+</html>
+
+
