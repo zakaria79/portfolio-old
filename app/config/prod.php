@@ -6,8 +6,8 @@ $app['db.options'] = array(
   'host' => 'localhost',
   'port'     => '3306',
   'dbname' => 'portfolio',
-  'user' => 'root',
-  'password' => ''
+  'user' => 'portfolio_user',
+  'password' => 'portfolio'
 );
 
 $app['user_admin'] = array(
