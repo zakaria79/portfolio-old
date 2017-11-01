@@ -9,6 +9,7 @@ $app['db.options'] = array(
   'user' => 'portfolio_user',
   'password' => 'portfolio'
 );
+// Je fais des tests
 
 $app['user_admin'] = array(
   'mail' => 'zakaria@gmail.com',
