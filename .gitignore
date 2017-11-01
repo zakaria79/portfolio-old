@@ -1,1 +1,4 @@
-
+app/config/
+vendor/
+node_modules/
+var/
